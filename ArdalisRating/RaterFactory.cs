@@ -29,7 +29,7 @@ namespace MohamedRating
             }
             catch (System.Exception)
             {
-               return null;
+               return new UnKnownPolicyRater(engine.logger);
             }
         }
     }

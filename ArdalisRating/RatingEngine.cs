@@ -28,7 +28,7 @@ namespace ArdalisRating
             var policy = policySerialzar.GetPolicyFromJsonString(policyJson);
 
             var rater = factory.CreateUsingReflection(policy, this);
-            rater?.Rate(policy);
+            rater.Rate(policy);
             logger.Log("Rating completed.");
         }
     }
